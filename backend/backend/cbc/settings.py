@@ -56,4 +56,14 @@ AUTH_PASSWORD_VALIDATORS = [
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cbc_db',
+        'USER': 'cbc_admin',
+        'PASSWORD': '123!#d',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
